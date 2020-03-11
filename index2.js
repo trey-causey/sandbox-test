@@ -74,32 +74,33 @@ mySqRt(999);
 console.log(`final x is: ${x}`);
 
 console.log(`Final output is ${g}`);
-// console.log(g);
-// improveG(g);
-// console.log(`test: ${g}`);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
-// improveG(g);
-// console.log(g);
 
+/*
+ * @param {number} num
+ * @return {number}
+ */
+var numberOfSteps  = function(num) {
+  var count = 0;
+  while (num !== 0) {
+    if(num % 2 === 0){
+      (num = num / 2);
+      count++;
+      } else {
+      (num--, count++);
+      }
+    }
+    return count;
+  };
 
+ console.log(numberOfSteps(14));
+/*
+ * @param {string} address
+ * @return {string}
+ */
+var defangIPaddr = function(address) {
+  
+  return address.split('.').join('[.]');
+    
+};
+
+console.log(defangIPaddr("1.1.1.1"));

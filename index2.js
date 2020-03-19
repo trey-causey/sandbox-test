@@ -104,3 +104,73 @@ var defangIPaddr = function(address) {
 };
 
 console.log(defangIPaddr("1.1.1.1"));
+
+/*
+ * @param {string} s
+ * @return {number}
+ */
+var balancedStringSplit = function(s) {
+  let counter = 0;
+  let numLine = 0;
+  for(var i = 0; i < s.length; i++)
+  {
+    if(s.charAt(i) == 'L')
+    {
+      numLine--;
+    } else if(s.charAt(i) == 'R')
+    {
+      numLine++;
+    }
+    if(numLine == 0)
+    { counter++}
+  }
+    console.log(counter);
+    return counter;
+};
+
+let s1 = "RLRRLLRLRL";
+let s2 = "RLLLLRRRLR";
+let s3 = "LLLLRRRR";
+let s4 = "RLRRRLLRLL";
+balancedStringSplit(s1);
+balancedStringSplit(s2);
+balancedStringSplit(s3);
+balancedStringSplit(s4);
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/*
+ * @param {ListNode} head
+ * @return {number}
+ */
+ var getDecimalValue = function(head) {
+     let sum = 0;  
+      let i =0;
+  for(var val in head)
+   {
+      if(val == 1)
+       {
+         sum += (1 * Math.pow(2,i));
+       }
+      i++;
+
+}
+     return sum;
+ };
+
+ function ListNode(val) {
+        this.val = val;
+       this.next = null;
+ }
+
+let head = new ListNode();
+head = [1,0,1,1];
+console.log(...head);
+console.log("the answer is: ");
+let ans = getDecimalValue(head);
+console.log(ans);

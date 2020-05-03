@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sitejsvh/public_html/sbtjs/
+    - /bin/cp index-chart-test.html $DEPLOYPATH
+    - /bin/cp index.js $DEPLOYPATH
+    - /bin/cp index2.html $DEPLOYPATH
+    - /bin/cp myChartingInfo.js $DEPLOYPATH
+    - /bin/cp sandbox.js $DEPLOYPATH

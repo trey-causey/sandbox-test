@@ -23,7 +23,7 @@ chartIt();
 
 async function getData() {
     // const response = await fetch('/resources/test.csv');
-    const response = await fetch('/resources/carInfo.csv');
+    const response = await fetch('/sbtjs/resources/carInfo.csv');
     const data = await response.text();
     console.log(data);
 

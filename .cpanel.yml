@@ -8,5 +8,5 @@ deployment:
     - /bin/cp myChartingInfo.js $DEPLOYPATH
     - /bin/cp sandbox.js $DEPLOYPATH
     - /bin/cp index2.js $DEPLOYPATH
-    - export  DEPLOYPATH=/home/sitejsvh/public_html/sbtjs/resources/
-    - /bin/cp carInfo.csv $DEPLOYPATH
+    - export  DEPLOYPATHA=/home/sitejsvh/public_html/sbtjs/resources/
+    - /bin/cp resources/carInfo.csv $DEPLOYPATHA

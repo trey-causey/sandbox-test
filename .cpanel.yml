@@ -8,3 +8,4 @@ deployment:
     - /bin/cp myChartingInfo.js $DEPLOYPATH
     - /bin/cp sandbox.js $DEPLOYPATH
     - /bin/cp index2.js $DEPLOYPATH
+    - /bin/cp carInfo.csv $DEPLOYPATH

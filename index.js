@@ -22,7 +22,7 @@ console.log("about to fetch race results");
 chartIt();
 
 async function getData() {
-    const response = await fetch('/../resources/carinfo.csv');
+    const response = await fetch('/sandbox-test/resources/carinfo.csv');
     //const response = await fetch('/sbtjs/resources/carInfo.csv');
     const data = await response.text();
     console.log(data);
